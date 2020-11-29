@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PurdueAcademicPlan</string>
+    <string-array name="Majors">
+        <item>Computer and Information Technology</item>
+        <item>Cyber-Security</item>
+        <item>Network Engineering Technology</item>
+        <item>Systems Analysis and Design</item>
+        <item>Exploratory Studies</item>
+    </string-array>
+    <string-array name="Minors">
+        <item>Organizational Leadership</item>
+        <item>Electrical Engineering Tech</item>
+        <item>Business</item>
+        <item>Statistics</item>
+        <item>History</item>
+    </string-array>
+</resources>
