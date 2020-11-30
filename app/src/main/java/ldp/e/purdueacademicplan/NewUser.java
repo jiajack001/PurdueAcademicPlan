@@ -1,5 +1,6 @@
 package ldp.e.purdueacademicplan;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -72,7 +73,13 @@ public class NewUser extends AppCompatActivity {
                 String password = passwordEditText.getText().toString();
                 String confirm = confirmEditText.getText().toString();
 
-                if (password.equals(confirm)) {
+                if (!password.isEmpty() && !confirm.isEmpty()) {
+                    passwordTextView.setTextColor(Color.RED);
+                    confirmTextView.setTextColor(Color.RED);
+                    Toast.makeText(getApplicationContext(), "Please enter a password for the account!", Toast.LENGTH_SHORT).show();
+
+
+                } else if (password.equals(confirm)) {
                     String username = userNameEditText.getText().toString();
                     String email = emailEditText.getText().toString();
                     boolean freshman = freshmanCheckBox.isChecked();
@@ -81,8 +88,9 @@ public class NewUser extends AppCompatActivity {
                     //TODO: Update User Database Here!!!
 
 
-
-
+                    Intent planOverviewPage = new Intent(getApplicationContext(), PlanOverview.class);
+                    startActivity(planOverviewPage);
+                    finish();
 
                 } else {
                     Toast.makeText(getApplicationContext(), "Please confirm that passwords are the same!", Toast.LENGTH_SHORT).show();
