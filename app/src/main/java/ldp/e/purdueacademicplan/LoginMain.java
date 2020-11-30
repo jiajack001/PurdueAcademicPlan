@@ -2,21 +2,20 @@ package ldp.e.purdueacademicplan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
-
-import java.nio.charset.StandardCharsets;
+import android.widget.TextView;
 import java.security.MessageDigest;
-
 
 
 public class LoginMain extends AppCompatActivity {
     EditText usernameEditText;
     EditText passwordEditText;
     Button loginButton;
+    TextView newUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +45,17 @@ public class LoginMain extends AppCompatActivity {
                 }catch(Exception ex) {
                     ex.printStackTrace();
                 }
+            }
+        });
+
+
+        newUser = findViewById(R.id.newUserTextView);
+        newUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent newUserPage = new Intent(getApplicationContext(), NewUser.class);
+                startActivity(newUserPage);
+
             }
         });
 
