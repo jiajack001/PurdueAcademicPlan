@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".NewUser"/>
         <activity android:name=".WhatIfCalculator"/>
+        <activity android:name=".PlanOverview"/>
+        <activity android:name=".StudentProfile"/>
 
     </application>
 
