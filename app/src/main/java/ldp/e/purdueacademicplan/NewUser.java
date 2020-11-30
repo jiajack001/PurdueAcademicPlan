@@ -88,8 +88,8 @@ public class NewUser extends AppCompatActivity {
                     //TODO: Update User Database Here!!!
 
 
-                    Intent planOverviewPage = new Intent(getApplicationContext(), PlanOverview.class);
-                    startActivity(planOverviewPage);
+                    Intent StudentProfilePage = new Intent(getApplicationContext(), StudentProfile.class);
+                    startActivity(StudentProfilePage);
                     finish();
 
                 } else {

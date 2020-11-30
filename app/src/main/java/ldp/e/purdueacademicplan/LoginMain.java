@@ -45,6 +45,15 @@ public class LoginMain extends AppCompatActivity {
                 }catch(Exception e) {
                     e.printStackTrace();
                 }
+
+                // TODO: Insert password hash mathcing here!!!
+
+
+
+
+                Intent StudentProfilePage = new Intent(getApplicationContext(), StudentProfile.class);
+                startActivity(StudentProfilePage);
+                finish();
             }
         });
 
