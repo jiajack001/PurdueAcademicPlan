@@ -91,7 +91,8 @@
         android:textColor="#FFC107"
         android:textColorHighlight="#E91E63"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="PlanOverview"/>
 
     <TextView
         android:id="@+id/confirmTextView"

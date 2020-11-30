@@ -73,7 +73,7 @@ public class NewUser extends AppCompatActivity {
                 String password = passwordEditText.getText().toString();
                 String confirm = confirmEditText.getText().toString();
 
-                if (!password.isEmpty() && !confirm.isEmpty()) {
+                if (password.isEmpty() || confirm.isEmpty()) {
                     passwordTextView.setTextColor(Color.RED);
                     confirmTextView.setTextColor(Color.RED);
                     Toast.makeText(getApplicationContext(), "Please enter a password for the account!", Toast.LENGTH_SHORT).show();

@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_weight="1"
-        android:text="Overall Dree Requirements"
+        android:text="Overall Degree Requirements"
         android:textAlignment="textStart"
         android:textColor="#FFC107"
         android:textSize="24sp"
