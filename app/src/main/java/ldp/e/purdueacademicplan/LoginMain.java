@@ -46,7 +46,7 @@ public class LoginMain extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                // TODO: Insert password hash mathcing here!!!
+                // TODO: Insert password hash matching here!!!
 
 
 
