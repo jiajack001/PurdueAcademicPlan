@@ -30,7 +30,7 @@ public class LoginMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // Password Hash using SHA-256
+                // Password Hashing using SHA-256
                 String password = passwordEditText.getText().toString();
                 String hash = "";
                 try {
@@ -42,8 +42,8 @@ public class LoginMain extends AppCompatActivity {
                         hash += hex;
                     }
 
-                }catch(Exception ex) {
-                    ex.printStackTrace();
+                }catch(Exception e) {
+                    e.printStackTrace();
                 }
             }
         });
